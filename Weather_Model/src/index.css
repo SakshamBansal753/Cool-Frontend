@@ -1,0 +1,10 @@
+@import "tailwindcss";
+body{
+  background-image: url('/Body.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100vw ;
+  background-size: cover; 
+  height: 100vh;
+  overflow: hidden;
+}
