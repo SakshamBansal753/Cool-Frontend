@@ -70,11 +70,12 @@ if(isAudioplay){
    ))}
   </div>
 
-  <button className='ml-10 flex items-center space-x-0.5'
+  <button className='ml-10 flex items-center space-x-0.5 text-white '
   onClick={toggleAudio}>
+  
 <audio ref={audioElementref}className='hidden' src='/loop.mp3' loop/>
 {[1,2,3,4].map((bar)=>(
-    <div key={bar} className={`indicator-line ${isIndicator? 'active':''}`}
+    <div key={bar} className={`indicator-line ${isIndicator? '':'active'}`}
     style={{animationDelay:`${bar*0.1}s`}}>
 
     </div>
