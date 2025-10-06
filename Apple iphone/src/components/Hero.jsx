@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { heroVideo, smallHeroVideo } from "../utils";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
-  // Video paths (from public folder)
-  const heroVideo = "/hero.mp4";
-  const smallHeroVideo = "/hero-small.mp4";
-
-  // State to handle video source
   const [VideoSrc, setVideoSrc] = useState(
     window.innerWidth < 760 ? smallHeroVideo : heroVideo
   );
-
-  // Update video on window resize
+const smallHeroVideo="video/smallHero.mp4"
+  const heroVideo="video/hero.mp4"
+  // Handle window resize to switch video
   const handleResize = () => {
     if (window.innerWidth < 760) {
       setVideoSrc(smallHeroVideo);
@@ -30,27 +27,27 @@ const Hero = () => {
 
   // GSAP animations
   useGSAP(() => {
-    gsap.to(".hero-title", { opacity: 1, delay: 1.5, duration: 1 });
-    gsap.to("#cta", { opacity: 1, y: -50, delay: 1.5, duration: 1 });
+    gsap.to(".hero", { opacity: 1, delay: 1.5 });
+    gsap.to("#cta", { opacity: 1, y: -50, delay: 1.5 });
   }, []);
 
   return (
     <section className="w-full h-[calc(100vh-60px)] bg-black relative">
       <div className="h-5/6 w-full flex flex-col justify-center items-center">
-        {/* Heading */}
-        <p className="hero-title text-center font-semibold text-3xl text-gray-300 opacity-0 max-md:mb-10">
+        {/* Hero Text */}
+        <p className="hero text-center font-semibold text-3xl text-gray-300 opacity-0 max-md:mb-10">
           iPhone 15 Pro
         </p>
 
         {/* Video */}
-        <div className="md:w-10/12 w-9/12 mt-5">
+        <div className="md:w-10/12 w-9/14">
           <video
-            className="pointer-events-none w-full rounded-lg"
+            className="pointer-events-none w-full"
             autoPlay
             muted
             playsInline
             loop
-            key={VideoSrc} // forces React to reload video when source changes
+            key={VideoSrc} // ensures video reloads on source change
           >
             <source src={VideoSrc} type="video/mp4" />
             Your browser does not support the video tag.
@@ -61,11 +58,11 @@ const Hero = () => {
       {/* CTA */}
       <div
         id="cta"
-        className="flex flex-col items-center opacity-0 translate-y-20 mt-10"
+        className="flex flex-col items-center opacity-0 translate-y-20"
       >
         <a
           href="#highlights"
-          className="rounded-2xl bg-blue-600 px-6 py-3 my-7 hover:bg-transparent border border-transparent hover:border hover:text-blue-400 hover:border-blue-600"
+          className="rounded-2xl bg-blue-600 px-6 py-8 my-7 hover:bg-transparent border border-transparent hover:border hover:text-blue-400 hover:border-blue-600"
         >
           Buy
         </a>
