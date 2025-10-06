@@ -200,8 +200,8 @@ transform-origin: bottom left;
 transform: scaleX(1);
 }
 .indicator-line {
-height: 2rem; /* h-1 */
-width: 3px; /* w-px */
+height: 3rem; /* h-1 */
+width: 4px; /* w-px */
 border-radius: 9999px; /* rounded-full */
 background-color: #ffffff; /* bg-white */
 transition: all 0.2s ease-in-out; /* transition-all duration-200 ease-in-out */
