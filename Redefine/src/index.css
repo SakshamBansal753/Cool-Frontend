@@ -171,7 +171,7 @@ color: #eff6ff; /* text-blue-50 */
 cursor: pointer;
 }
 .floating-nav {
-background: rgba(255, 255, 255, 0.1); /* transparent white layer */
+background: rgba(255, 255,255, 0.1); /* transparent white layer */
 border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
 border-radius: 0.75rem; /* rounded-lg */
 backdrop-filter: blur(12px) saturate(180%); /* frosted glass effect */
@@ -200,8 +200,8 @@ transform-origin: bottom left;
 transform: scaleX(1);
 }
 .indicator-line {
-height: 0.25rem; /* h-1 */
-width: 1px; /* w-px */
+height: 2rem; /* h-1 */
+width: 3px; /* w-px */
 border-radius: 9999px; /* rounded-full */
 background-color: #ffffff; /* bg-white */
 transition: all 0.2s ease-in-out; /* transition-all duration-200 ease-in-out */
