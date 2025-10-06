@@ -7,8 +7,7 @@ const Hero = () => {
   const [VideoSrc, setVideoSrc] = useState(
     window.innerWidth < 760 ? smallHeroVideo : heroVideo
   );
-const smallHeroVideo="video/smallHero.mp4"
-  const heroVideo="video/hero.mp4"
+
   // Handle window resize to switch video
   const handleResize = () => {
     if (window.innerWidth < 760) {
@@ -75,3 +74,4 @@ const smallHeroVideo="video/smallHero.mp4"
 };
 
 export default Hero;
+
