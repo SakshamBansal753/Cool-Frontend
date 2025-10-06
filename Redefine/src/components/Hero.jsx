@@ -93,7 +93,7 @@ const getVideosrc = (index) => `/hero-${index}.mp4`;
         className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-50 size-64 cursor-pointer overflow-hidden rounded-lg mask-clip-path flex items-center justify-center ">
        <div
        onClick={handleminivideoClick}
-       className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100 ">
+       className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100 bg-white/50 ">
         <video ref={nextVidRef}
         src={getVideosrc(upcomingvidindex)} loop muted id="current-video" className="size-64   origin-center object-cover object-center " onLoadedData={handlevideoLoaded}/>
        </div>
@@ -135,3 +135,4 @@ const getVideosrc = (index) => `/hero-${index}.mp4`;
 };
 
 export default Hero;
+
