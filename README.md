@@ -26,4 +26,4 @@ Welcome to my **React + Three.js + GSAP** playground! This repository is all abo
 
 - Customize and experiment to create your own interactive 3D experiences!
 
-## Keep coding, young guns! 🔥
+## Keep coding, young guns thankyou! 🔥
