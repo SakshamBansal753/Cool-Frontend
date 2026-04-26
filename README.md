@@ -1,6 +1,6 @@
 # **Hi there, young guns! I am Saksham** 👋
 
-Welcome to my **React + Three.js + GSAP** playground! This repository is all about creating stunning 3D experiences on the web with smooth animations and interactive elements. 🚀
+Welcome to my **React + Three.js + GSAP** playground! This repository is all about creating stunning 3D experiences on the web with smooth animations and interactive elements. Go ahead and see 🚀
 
 ---
 
