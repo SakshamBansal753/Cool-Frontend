@@ -31,6 +31,7 @@ const Art = () => {
         }).to('#masked-content',{
             opacity:1,
             duration:1,
+            y:70,
             ease:'power1.inOut'
         })
     })
