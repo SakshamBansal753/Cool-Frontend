@@ -9,8 +9,8 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 const Contact = () => {
   return (
-    <div id="contact" className="my-20 min-h-96 w-screen  px-10">
-      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
+    <div id="contact" className="my-20 min-h-190 w-screen  px-10">
+      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden h-150">
         <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
           <ImageClipBox
             src="contact-1.webp"
@@ -29,7 +29,7 @@ const Contact = () => {
           />
           <ImageClipBox
             src="swordman.webp"
-            clipClass="sword-man-clip-path md:scale-125"
+            clipClass="sword-man-clip-path md:scale-155"
           />
         </div>
 
